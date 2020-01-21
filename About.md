@@ -12,6 +12,7 @@ Barijaona Pierre
 
 
 
+
 # l'intérêt scientifique de ces données et de votre catalogue
 Vulgariser l'accès à catalogue avec filtres
 Accès aux données brutes structurées (section dédiée étudiants)
@@ -32,4 +33,4 @@ Visualisation cartographique des points idéaux d'observation des étoiles
 Visualisation dynamique des galaxies
 
 # les technologies pressenties pour réaliser le projet
-Flask, python, swagger/openapi?, docker, js
+Flask, python, swagger/openapi?, docker, js, graphDB
