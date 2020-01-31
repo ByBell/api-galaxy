@@ -1,6 +1,10 @@
 # Liens
 https://fr.wikibooks.org/wiki/Mini-guide_du_catalogue_Messier/Galaxies
 http://messier.obspm.fr/
+http://www.astrosurf.com/astromessier/
+http://pp3.sourceforge.net/
+https://fr.wikipedia.org/wiki/Liste_des_objets_de_Messier?oldformat=true
+https://ned.ipac.caltech.edu/cgi-bin/nph-objsearch?objname=MESSIER%201&extend=no&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=RA+or+Longitude&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES#objlist
 
 # les noms et prénoms des membres du groupe
 
