@@ -1,6 +1,6 @@
 FROM python:3.6-alpine
 
-MAINTAINER PiStevGa
+LABEL maintainer=PiStevGa
   
 COPY src /src
 COPY requirements.txt /requirements.txt

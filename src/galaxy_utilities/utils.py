@@ -1,5 +1,6 @@
 import os
 from peewee import *
+import json
 
 ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'gif']
 
@@ -8,6 +9,10 @@ DB_NAME = os.getenv('DB_NAME')
 GALAXY_TABLE = os.getenv('GALAXY_TABLE')
 
 db = SqliteDatabase(DB_NAME)
+
+def return_json_blob():
+    a = [DB_NAME, "messier 2", "messier 3"]
+    return json.dumps(a)
 
 def allowed_file(filename):
     try:
@@ -37,7 +42,6 @@ def upload_to_db(content, name):
     
     try:
         print("Uploading du fichier: {}".format(filename))
-        bucket.put_object(Bucket=BUCKET_NAME, Key=filename, Body=content)
         
         return 1
     except Exception as e:

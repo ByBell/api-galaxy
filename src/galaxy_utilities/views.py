@@ -1,7 +1,7 @@
 from flask import Flask, flash, request, redirect, url_for
 from werkzeug.utils import secure_filename
 
-from galaxy_utilities.utils import allowed_file, upload_to_db
+from galaxy_utilities.utils import allowed_file, upload_to_db, return_json_blob
 
 app = Flask(__name__)
 
@@ -35,7 +35,7 @@ def upload_file():
     return '''
     <!doctype html>
     <title>Upload Image to S3</title>
-    <h1>Upload new File</h1>
+    <h1>Upload new sdqsdqsFile</h1>
     <form method=post enctype=multipart/form-data>
       <input type=file name=file>
       <input type=submit value=Upload>
@@ -52,3 +52,12 @@ def feedback():
     <p>Your file has been uploaded.</p>
     <p>Go back to <a href="/">home page</a></p>
     '''
+
+@app.route('/messier', methods=['GET'])
+def get_all_messier():
+    """Return all available messiers.
+    
+    In JSON format.
+    """
+    a = return_json_blob()
+    return a

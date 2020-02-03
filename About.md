@@ -6,6 +6,10 @@ http://pp3.sourceforge.net/
 https://fr.wikipedia.org/wiki/Liste_des_objets_de_Messier?oldformat=true
 https://ned.ipac.caltech.edu/cgi-bin/nph-objsearch?objname=MESSIER%201&extend=no&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=RA+or+Longitude&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES#objlist
 
+http://www.lasam.ca/messier/catalogue.html
+
+https://www.datastro.eu/explore/dataset/catalogue-de-messier/table/?disjunctive.objet&disjunctive.mag&disjunctive.english_name_nom_en_anglais&disjunctive.french_name_nom_francais&disjunctive.latin_name_nom_latin&sort=messier
+
 # les noms et prénoms des membres du groupe
 
 Razanajato Steven
@@ -45,3 +49,4 @@ Sqlite3 https://www.sqlservertutorial.net/sql-server-basics/sql-server-insert-mu
 https://docs.python.org/2/library/sqlite3.html
 https://www.tutorialspoint.com/sqlite/sqlite_insert_query.htm
 Docker sqlite3 https://github.com/up9cloud/docker-sqlite3
+http://docs.peewee-orm.com/en/latest/
