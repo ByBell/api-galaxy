@@ -1,11 +1,13 @@
 import os
+from peewee import *
 
 ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'gif']
 
 # ENVIRONMENT VARIABLE
-ACCESS_KEY_ID = os.getenv('ACCESS_KEY_ID')
-SECRET_ACCESS_KEY = os.getenv('SECRET_ACCESS_KEY')
-BUCKET_NAME = os.getenv('BUCKET_NAME')
+DB_NAME = os.getenv('DB_NAME')
+GALAXY_TABLE = os.getenv('GALAXY_TABLE')
+
+db = SqliteDatabase(DB_NAME)
 
 def allowed_file(filename):
     try:
@@ -17,25 +19,15 @@ def allowed_file(filename):
 
 # Upload file
 
-def get_session():
-    """Return a boto3 Session object, with the appropriate credentials."""
-    session = ACCESS_KEY_ID + SECRET_ACCESS_KEY
-    return session
-
-
-
-def get_bucket(session=None):
-    """Return a Bucket object, corresponding to your own bucket."""
-    bucket = BUCKET_NAME
-    return bucket
+def get_sqlite_conn():
+    """Return a sqlite3 connection (DB_NAME in environnement variables)."""
+    conn = sqlite3.connect(DB_NAME)
+    return conn
 
 # Upload with ACL set to "public-read"
 def upload_to_db(content, name):
-    # get session
-    session = get_session()
-
-    # get bucket
-    bucket = get_bucket(session)
+    # get conn
+    conn = get_sqlite_conn()
 
     try:
         filename = str('images/'+name)

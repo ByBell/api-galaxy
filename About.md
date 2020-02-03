@@ -38,3 +38,10 @@ Visualisation dynamique des galaxies
 
 # les technologies pressenties pour réaliser le projet
 Flask, python, swagger/openapi?, docker, js, graphDB
+
+
+## Doc supplémentaires
+Sqlite3 https://www.sqlservertutorial.net/sql-server-basics/sql-server-insert-multiple-rows/
+https://docs.python.org/2/library/sqlite3.html
+https://www.tutorialspoint.com/sqlite/sqlite_insert_query.htm
+Docker sqlite3 https://github.com/up9cloud/docker-sqlite3
