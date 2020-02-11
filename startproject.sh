@@ -1,1 +1,1 @@
-cd src && gunicorn -c gunicorn.py wsgi:application
+cd src && gunicorn --reload -c gunicorn.py wsgi:application

@@ -2,3 +2,4 @@
 .env
 src/__pycache__/
 src/galaxy_utilities/__pycache__
+.vscode
