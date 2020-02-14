@@ -3,3 +3,5 @@ gunicorn==19.9.0
 peewee==3.13.1
 Werkzeug==0.16.1
 gunicorn==19.9.0
+marshmallow==3.4.0
+marshmallow-peewee==3.0.0

@@ -1,11 +1,11 @@
-Messier,NGC,Découvreur,Année,Constellation,Objet,A.D.,Déc.,Mag.,Dimension,Distance,Saison
+Messier,NGC,Decouvreur,Annee,Constellation,Objet,Ascension,Declinaison,Mag,Dimension,Distance,Saison
 M1,NGC1952,Bévis,1731,Taureau,Reste de Supernova,05h 34m 40.5s,"+22d 01' 10"" ","8,4","6,0' x 4,0'",6 500 a.l.,Hiver
 M2,NGC7089,Maraldi,1746,Verseau,Amas Globulaires,21h 33m 37.7s ,"-00d 48' 17""","6,5","11,7'",55 000 a.l.,Automne
 M3,NGC5272,Messier,1764,Chiens de Chasse,Amas Globulaires,13h 42m 17.8s,"+28d 22' 11""","6,4","18,6'",48 500 a.l.,Printemps
 M4,NGC6121,Chéseaux,1746,Scorpion,Amas Globulaires,16h 23m 43.8s,"-26d 32' 21"" ","5,9","22,8'",9 900 a.l.,Été
 M5,NGC5904,Kirch,1702,Serpent,Amas Globulaires,15h 18m 42.4s,"+02d 04' 29"" ","5,8","19,9'",24 800 a.l.,Printemps
 M6,NGC6504,Hodierna,1654,Scorpion,Amas Ouvert,17h 40m 14.4s,"-32d 13' 08"" ","4,2","15,0'",1 300 a.l.,Été
-M7,NGC6475,?, ,Scorpion,Amas Ouvert,17h 54m 2.7s,"-34d 49' 06""","3,3","30,0'",780 a.l.,Été
+M7,NGC6475,?,0,Scorpion,Amas Ouvert,17h 54m 2.7s,"-34d 49' 06""","3,3","30,0'",780 a.l.,Été
 M8,NGC6523,Flamsteed,1680,Sagittaire,Nébuleuse à émission,18h 03m 56.1s,"-24d 23' 03""","5,8","90,0' x 40,0'",4 850 a.l.,Été
 M9,NGC6333,Messier,1764,Serpentaire,Amas Globulaires,17h 19m 19.6s,"-18d 31' 10"" ","7,9","5,5'",25 800 a.l.,Été
 M10,NGC6254,Messier,1764,Serpentaire,Amas Globulaires,16h 57m 12.7s,"-04d 06' 12""","6,6","12,2'",16 300 a.l.,Été
@@ -29,7 +29,7 @@ M27,NGC6853,Messier,1764,Renard,Nébuleuse Planétaire,19h 59m 41.8s,"+22d 43' 3
 M28,NGC6626,Messier,1764,Sagittaire,Amas Globulaires,18h 24m 38.2s,"-24d 51' 59""","6,9","15,0'",19 000 a.l.,Été
 M29,NGC6913,Messier,1764,Cygne,Amas Ouvert,20h 23m 58.8s,"+38d 32' 42""","6,6","7,0'",4 100 a.l.,Été
 M30,NGC7099,Messier,1764,Capricorne,Amas Globulaires,21h 40m 32.5s,"-23d 10' 24""","7,5","8,9'",41 000 a.l.,Automne
-M31,NGC224, , ,Andromède,Galaxie,00h 42m 51.3s,"+41d 17' 04""","3,5","180,0' x 63,0'","2,25 a.l.",Automne
+M31,NGC224, ,0,Andromède,Galaxie,00h 42m 51.3s,"+41d 17' 04""","3,5","180,0' x 63,0'","2,25 a.l.",Automne
 M32,NGC221,Le Gentil,1749,Andromède,Galaxie,00h 42m 51.3s,"+40d 53' 04""","8,2","7,6' x 5,8'",?,Automne
 M33,NGC598,Messier,1764,Triangle,Galaxie,01h 34m 3.7s,"+30d 39' 58""","5,7","62,0. x 39,0'","2,4 a.l.",Automne
 M34,NGC1039,Messier,1764,Persée,Amas Ouvert,02h 42m 11.4s ,"+42d 47' 48""","5,2","35,0'",1 450 a.l.,Automne
@@ -38,12 +38,12 @@ M36,NGC1960,Hodierna,1654,Cocher,Amas Ouvert,05h 36m 17.6s,"+34d 08' 07""","6,0"
 M37,NGC2099,Hodierna,1654,Cocher,Amas Ouvert,05h 52m 35.4s,"+32d 33' 02""","5,6","24,0'",3 600 a.l.,Hiver
 M38,NGC1912,Hodierna,1654,Cocher,Amas Ouvert,05h 28m 53.7s,"+35d 50' 09""","6,4","21,0'",2 750 a.l.,Hiver
 M39,NGC7092,Le Gentil,1750,Cygne,Amas Ouvert,21h 32m 17.0s,"+48d 26' 57""","4,6","32,0'",880 a.l.,Automne
-M40,Winnecke 4,Hevelius,1660,Grande Ourse,Étoile Double,12h 22m 30.1s,"+58d 03' 57""","9,1", , ,Printemps
+M40,Winnecke 4,Hevelius,1660,Grande Ourse,Étoile Double,12h 22m 30.1s,"+58d 03' 57""","9,1", ,0,Printemps
 M41,NGC2287,Hodierna,1654,Grand Chien,Amas Ouvert,06h 46m 7.6s,"-20d 43' 58""","4,5","30,0'",1 600 a.l.,Hiver
 M42,NGC9176,Peiresc,1610,Orion,Nébuleuse à émission,05h 35m 32.7s,"-05d 26' 46""","4,0","30,0'", 1 500 a.l.,Hiver
 M43,NGC1982,Mairan,1750,Orion,Nébuleuse à Réflexion,05h 35m 44.7s,"-05d 15' 46""","9,0","20,0' x 15,0'", 1 500 a.l.,Hiver
-M44,NGC2632, , ,Crabe,Amas Ouvert,08h 40m 15.3s,"+19d 58' 27""","3,1","70,0'",520 a.l.,Printemps
-M45, , , ,Taureau,Amas Ouvert,03h 47m 10.5s,"+24d 07' 35""","1,6","120,0'",410 a.l.,Hiver
+M44,NGC2632, ,0,Crabe,Amas Ouvert,08h 40m 15.3s,"+19d 58' 27""","3,1","70,0'",520 a.l.,Printemps
+M45, , ,0,Taureau,Amas Ouvert,03h 47m 10.5s,"+24d 07' 35""","1,6","120,0'",410 a.l.,Hiver
 M46,NGC2437,Messier,1771,Poupe,Amas Ouvert,07h 41m 55.7s,"-14d 49' 11""","6,1","24,0'",3 200 a.l.,Hiver
 M47,NGC2422,Hodierna,1654,Poupe,Amas Ouvert,07h 36m 43.8s ,"-14d 30' 10""","4,4","22,0'",1 750 a.l.,Hiver
 M48,NGC2548,Messier,1771,Hydre Femelle,Amas Ouvert,08h 13m 56.1s,"-05d 48' 19""","5,8",42',1 500 a.l.,Hiver
@@ -71,7 +71,7 @@ M69,NGC6637,Lacaille,1751,Sagittaire,Amas Globulaires,18h 31m 32.7s,"-32d 20' 59
 M70,NGC6681,Messier,1780,Sagittaire,Amas Globulaires,18h 43m 20.6s,"-32d 17' 56""","8,1","4,1'",65 000 a.l.,Été
 M71,NGC6838,Chéseaux,1746,Flèche,Amas Globulaires,19h 53m 54.0s,"+18d 47' 31""","8,3","6,1'",13 000 a.l.,Été
 M72,NGC6981,Méchain,1780,Verseau,Amas Globulaires,20h 53m 38.0s,"-12d 31' 27""","9,4","5,1'",62 000 a.l.,Automne
-M73,NGC6994,Messier,1780,Verseau,Amas Ouvert,20h 59m 8.0s,"-12d 37' 26""","9,0","2,8'", ,Automne
+M73,NGC6994,Messier,1780,Verseau,Amas Ouvert,20h 59m 8.0s,"-12d 37' 26""","9,0","2,8'",0,Automne
 M74,NGC628,Méchain,1780,Poissons,Galaxie,01h 36m 51.3s,"+15d 47' 55""","9,2","10,0' x 9,6'",26 000 000 a.l.,Automne
 M75,NGC6864,Méchain,1780,Sagittaire,Amas Globulaires,20h 06m 14.3s,"-21d 54' 39""","8,6","4,6'",78 500 a.l.,Été
 M76,NGC650,Méchain,1780,Persée,Nébuleuse Planétaire,01h 42m 29.2s,"+51d 34' 59""","12,0",65'',8 200 a.l.,Automne

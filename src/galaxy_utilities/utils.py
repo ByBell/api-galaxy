@@ -1,18 +1,56 @@
 import os
 from peewee import *
+from marshmallow_peewee import ModelSchema
 import json
 
 ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'gif']
 
 # ENVIRONMENT VARIABLE
 DB_NAME = os.getenv('DB_NAME')
-GALAXY_TABLE = os.getenv('GALAXY_TABLE')
 
 db = SqliteDatabase(DB_NAME)
 
+class Messier(Model):
+    messier = CharField()
+    ngc = CharField()
+    decouvreur = CharField()
+    annee = IntegerField()
+    constellation = CharField()
+    objet = CharField()
+    ascension = CharField()
+    declinaison = CharField()
+    mag = FloatField()
+    dimension = CharField()
+    distance = FloatField()
+    saison = CharField()
+    visible = CharField()
+
+    class Meta:
+        database = db
+
+class MessierSchema(ModelSchema):
+
+    class Meta:
+        model = Messier
+
 def return_json_blob():
-    a = [DB_NAME, "messier 2", "messier 3"]
-    return json.dumps(a)
+    # db.connect()
+
+    messier = []
+    for m in Messier.select():
+        a = json.dump()
+        # a = json.dumps(m)
+        # try:
+        result, errors = MessierSchema().dump(obj=m)
+        print(errors)
+        # except ValueError:
+        #     pass
+
+    # db.close()
+
+    print(messier)
+    
+    return "result"
 
 def allowed_file(filename):
     try:
