@@ -12,7 +12,4 @@ COPY db /db
 COPY src /src
 WORKDIR /src
 
-RUN echo $(pwd)
-RUN echo $(ls -al)
-
 CMD ["gunicorn", "-c", "gunicorn.py", "wsgi:application"]
