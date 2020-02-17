@@ -1,7 +1,6 @@
 import os
 from peewee import *
-from marshmallow_peewee import ModelSchema
-import json
+from playhouse.shortcuts import model_to_dict
 
 ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'gif']
 
@@ -28,50 +27,54 @@ class Messier(Model):
     class Meta:
         database = db
 
-class MessierSchema(ModelSchema):
+def return_all_messiers():
+    db.connect()
 
-    class Meta:
-        model = Messier
-
-def return_json_blob():
-    # db.connect()
-
-    messier = []
+    messiers = []
     for m in Messier.select():
-        a = json.dump()
-        # a = json.dumps(m)
-        # try:
-        result, errors = MessierSchema().dump(obj=m)
-        print(errors)
-        # except ValueError:
-        #     pass
+        messiers.append(model_to_dict(m))
 
-    # db.close()
+    db.close()
 
-    print(messier)
-    
-    return "result"
+    return  messiers
 
-def allowed_file(filename):
-    try:
-        name, ext = filename.rsplit('.', 1)
-    except ValueError:
-        return False
-    return ext.lower() in ALLOWED_EXTENSIONS
+def return_visible_messiers(visibility):
+    db.connect()
 
+    messiers = []
+    for m in Messier.select().where(Messier.visible == visibility):
+        messiers.append(model_to_dict(m))
 
-# Upload file
+    db.close()
 
-def get_sqlite_conn():
-    """Return a sqlite3 connection (DB_NAME in environnement variables)."""
-    conn = sqlite3.connect(DB_NAME)
-    return conn
+    return  messiers
+
+def return_season_messiers(season):
+    db.connect()
+
+    messiers = []
+    for m in Messier.select().where(Messier.saison == season):
+        messiers.append(model_to_dict(m))
+
+    db.close()
+
+    return  messiers
+
+def return_distance_messiers(distancemin, distancemax):
+    db.connect()
+
+    messiers = []
+    for m in Messier.select().where(Messier.distance >= distancemin and Messier.distance <= distancemax):
+        messiers.append(model_to_dict(m))
+
+    db.close()
+
+    return  messiers
+
 
 # Upload with ACL set to "public-read"
 def upload_to_db(content, name):
     # get conn
-    conn = get_sqlite_conn()
-
     try:
         filename = str('images/'+name)
     except Exception as e:

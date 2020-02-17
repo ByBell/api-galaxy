@@ -13,10 +13,9 @@ services:
     build: .
     image: pistevga/galaxy-api
     env_file:
-      - .env
+      - .env.dist
     environment:
       - DB_NAME=${DB_NAME}
-      - GALAXY_TABLE=${GALAXY_TABLE}
     ports:
       - "5000:5000"
     container_name: "pistevga-galaxy-api"

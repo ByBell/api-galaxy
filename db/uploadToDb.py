@@ -1,9 +1,9 @@
 from peewee import *
 import pandas as pd
 import random
+import unidecode
 
 DB_NAME = 'database.db'
-GALAXY_TABLE = 'galaxy'
 
 df = pd.read_csv('messier_wiki.csv')
 
@@ -43,9 +43,15 @@ class Messier(Model):
     class Meta:
         database = db
 
+print("Connecting to db")
 db.connect()
-db.create_tables([Messier])
+print("... OK")
 
+print("Creating table")
+db.create_tables([Messier])
+print("... OK")
+
+print("Saving to db")
 for index, row in df.iterrows():
     messier = Messier.create(
         messier = row["Messier"],
@@ -59,8 +65,8 @@ for index, row in df.iterrows():
         mag = float(row["Mag"]),
         dimension = row["Dimension"],
         distance = float(row["Distance"]),
-        saison = row["Saison"],
-        visible = "Oeil" if random.randint(0, 1) == 1 else "Telescope"
+        saison = unidecode.unidecode((row["Saison"]).lower()),
+        visible = "oeil" if random.randint(0, 1) == 1 else "telescope"
     )
 
     try:
@@ -68,4 +74,8 @@ for index, row in df.iterrows():
     except:
         print("error")
 
+print("... OK")
+
+print("Closing db")
 db.close()
+print('... OK')
